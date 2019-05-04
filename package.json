@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d dist --source-maps",
-    "start": "babel-node src/index.js"
+    "start": "nodemon src/index.js --exec babel-node",
+    "serve": "node dist/index.js",
+    "clean": "rimraf dist"
   },
   "repository": {
     "type": "git",
@@ -20,12 +22,14 @@
   "homepage": "https://github.com/CristianSifuentes/GraphqlLabs#readme",
   "dependencies": {
     "@babel/polyfill": "^7.4.4",
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "rimraf": "^2.6.3"
   },
   "devDependencies": {
     "@babel/cli": "^7.4.4",
     "@babel/core": "^7.4.4",
+    "@babel/node": "^7.4.4",
     "@babel/preset-env": "^7.4.4",
-    "@babel/node": "^7.4.4"
+    "nodemon": "^1.19.0"
   }
 }
