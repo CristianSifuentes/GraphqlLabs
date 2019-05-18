@@ -21,15 +21,18 @@
   },
   "homepage": "https://github.com/CristianSifuentes/GraphqlLabs#readme",
   "dependencies": {
-    "@babel/polyfill": "^7.4.4",
-    "express": "^4.16.4",
+    "express": "^4.17.0",
+    "express-graphql": "^0.8.0",
+    "graphql": "^14.3.0",
+    "graphql-tools": "^4.0.4",
     "rimraf": "^2.6.3"
   },
   "devDependencies": {
-    "@babel/cli": "^7.4.4",
-    "@babel/core": "^7.4.4",
-    "@babel/node": "^7.4.4",
-    "@babel/preset-env": "^7.4.4",
-    "nodemon": "^1.19.0"
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/polyfill": "^7.0.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/node": "^7.0.0",
+    "nodemon": "^1.18.4"
   }
 }
