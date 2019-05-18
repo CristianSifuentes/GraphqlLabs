@@ -1,5 +1,6 @@
 import express from "express";
 import graphqlHTTP  from "express-graphql";
+import schema  from "./schema";
 
 console.log('Testing');
 
@@ -12,7 +13,8 @@ app.get('/', (req, res) => {
      })
 });
 
-const schema = {};
+//objeto donde esta todo lo que puedo consultar
+// const schema = {};
 
 app.use('/graphql', graphqlHTTP ({
    graphiql: true,
