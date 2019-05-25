@@ -1,4 +1,5 @@
 //Se crean funciones
+import { task } from "./sample"
 
 export const resolvers = {
    Query: {
@@ -7,6 +8,9 @@ export const resolvers = {
        },
        greet(root, { name }) {
            return `Hola mi nombre es ${name}!`;
+       },
+       task(){
+           return task;
        }
    }
 };
