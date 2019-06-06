@@ -1,10 +1,12 @@
 import express from "express";
 import graphqlHTTP  from "express-graphql";
 import schema  from "./schema";
+import { connect } from "./database"
+// console.log('Testing');
 
-console.log('Testing');
 
 const app = express();
+connect();
 
 app.get('/', (req, res) => {
   return res.json(
