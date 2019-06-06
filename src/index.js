@@ -20,7 +20,10 @@ app.get('/', (req, res) => {
 
 app.use('/graphql', graphqlHTTP ({
    graphiql: true,
-   schema: schema
+   schema: schema,
+   context: {
+     messageId: 'test'
+   }
 }));
 
 app.listen(4000, () => {
