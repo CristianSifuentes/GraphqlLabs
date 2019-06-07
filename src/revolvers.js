@@ -14,6 +14,10 @@ export const resolvers = {
        },
        task(){
            return task;
+       },
+       async users(){
+             return await User.find();
+        
        }
    },
    Mutation: {
@@ -22,11 +26,12 @@ export const resolvers = {
         task.push(input);
          return input;
        },
-       createUser(_, { input }){
+       async createUser(_, { input }){
         const newUser = new User(input);
+         await newUser.save();
         console.log(newUser);
-        return null;
-       }
+           return newUser;
+        }
    }
 };
 
