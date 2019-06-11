@@ -20,7 +20,7 @@ const typeDefs = `
     _id: ID
     firstname: String!
     lastname: String!
-    age: Int!
+    age: Int
   }
 
 
